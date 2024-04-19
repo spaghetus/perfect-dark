@@ -1,0 +1,15 @@
+diff --git a/Makefile.port b/Makefile.port
+index b8ebadb12..93237a074 100644
+--- a/Makefile.port
++++ b/Makefile.port
+@@ -259,7 +259,9 @@ COMMON_CFLAGS := $(C_DEFINES) -DAVOID_UB=1 $(INCLUDES) $(TARGET_CFLAGS) -g \
+   -Wno-unused-but-set-variable \
+   -Wno-unused-value \
+   -Wno-unused-variable \
+-  -Wno-format-truncation
++  -Wno-format-truncation \
++  -Wno-format \
++  -Wno-format-security
+ 
+ CFLAGS := $(COMMON_CFLAGS) -Wno-pointer-sign
+ CXXFLAGS := $(COMMON_CFLAGS) -Wno-unused-function
